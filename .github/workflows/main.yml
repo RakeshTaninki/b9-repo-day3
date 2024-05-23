@@ -4,3 +4,14 @@ on:
   push:
     branches:
     - main
+
+jobs:
+  deploy_to_aws_lambda_function:
+    name: deploy_to_aws_lambda_function
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v4
+    - 
+      name: command1
+      run: ls -la
+      
