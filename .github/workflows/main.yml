@@ -20,3 +20,6 @@ jobs:
     - 
       name: checking the list files
       run: ls -la
+    - 
+      name: publish to lambda
+      run: aws lambda update-function-code --function-name WorkFlowFunction --zip-file fileb://python.zip
