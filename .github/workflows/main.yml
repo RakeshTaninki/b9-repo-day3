@@ -22,7 +22,7 @@ jobs:
       run: ls -la
     - 
       name: publish to lambda
-      run: aws lambda update-function-code --function-name WorkFlowFunction --zip-file fileb://python.zip
+      run: aws lambda update-function-code --function-name WorkFlowFunction --zip-file fileb://python.zip --region ap-south-1
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
