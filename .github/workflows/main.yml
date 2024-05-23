@@ -14,4 +14,9 @@ jobs:
     - 
       name: command1
       run: ls -la
-      
+    - 
+      name: creating a zip package
+      run: zip python.zip lambda_function.py
+    - 
+      name: checking the list files
+      run: ls -la
